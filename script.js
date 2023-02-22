@@ -8,24 +8,41 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  
-  // This will use 24 hour time to do comparisons with the id inside of the row class.
-  const rows = document.getElementsByClassName("row");
-  let currentHour = parseInt(moment().format("H"));
 
+  // This will use 24 hour time to do comparisons with the id inside of the row class.
   
+    // Get the current hour using Day.js
+    const currentHour = dayjs().hour();
+
+    // Loop through each time-block element
+    const timeBlocks = document.querySelectorAll(".time-block");
+    timeBlocks.forEach(timeBlock => {
+
+      // Get the id attribute of each time-block element and store it as a new constant
+      const timeBlockId = timeBlock.getAttribute("id");
+
+      // Extract the hour value from the id attribute, which is in the 1 place in the array.
+      const hour = parseInt(timeBlockId.split("-")[1]);
+
+      // Compare the hour value to the current hour (must be in 24 hours)
+      if (hour < currentHour) {
+        // If the hour value is less than the current hour, add the "past" class to the element
+        timeBlock.classList.add("past");
+      } else if (hour === currentHour) {
+        // If the hour value is equal to the current hour, add the "present" class to the element
+        timeBlock.classList.add("present");
+      } else {
+        // If the hour value is greater than the current hour, add the "future" class to the element
+        timeBlock.classList.add("future");
+      }
+      });
+
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
+  
+
   // Get the current time and date using Day.js
     const currentTime = () => {
       return dayjs().format("dddd MMMM DD, YYYY");
