@@ -1,99 +1,62 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work-Day-Scheduler
 
-## Your Task
+## About The Project
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+The goal of this project was to create an interactive work day scheduler that allows users to input events and then save htem for later use. It also is visually accesible, telling users what time it is based on the color of the time blocks. 
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+### Built With
 
-## User Story
+* HTML 
+* CSS
+* JavaScript
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+## Getting Started
 
-## Acceptance Criteria
+In order to acess this website, just visit the following webpage: [https://github.com/andrewbreytenbach/work-day-scheduler](https://github.com/andrewbreytenbach/work-day-scheduler)
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+To get a local copy up and running, simply view the index.html file, stle.css, or the script.js file and see how you can play around, copy, and edit the file for personal usage. You can also change the color of the time blocks, the font, or even the way the time is displayed for individual use.
 
-The following animation demonstrates the application functionality:
+## Usage
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+Once the user first acceses the website, the following image is what they will find: 
 
-## Grading Requirements
+![Start Page](/images/start-page.png "Start Page")
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+This is the start page for the work day scheduler. Here the user sees that the day and time is displayed on the top of the page in the header. Additionally, the user will also know what time it is by the color of the blocks- red for the current hour, gray for the previous hours, and green for future hours.
 
-This Challenge is graded based on the following criteria:
+In order to add an event, the user simply needs to begin typing in any time block and then hit the blue save button. This will save the text to local storage, and even if the page is refreshed or the browser is closed, the event is still stored and the text will be displayed until the user manually deletes it.
 
-### Technical Acceptance Criteria: 40%
+![First Event](/images/first-event.png "First Event")
 
-* Satisfies all of the above acceptance criteria plus the following:
+Depending on the time of day, the user will see one, two, or three colors, as shown below:
 
-  * Uses a date utility library to work with date and time
+![Interactive Time](/images/interactive-time.png "Interactive Time")
 
-### Deployment: 32%
+Again, red is for the current hour, green is for future hours, and gray is for past hours. This gives the user a quick visual to know where in the work day scheduler they are and what events still need to take place.
+ 
 
-* Application deployed at live URL
+## License
 
-* Application loads with no errors
+There is no license this repo was distributed under. 
 
-* Application GitHub URL submitted
+## Contact
 
-* GitHub repo contains application code
+Andrew Breytenbach
 
-### Application Quality: 15%
+Project Link: [https://github.com/andrewbreytenbach/work-day-scheduler](https://github.com/andrewbreytenbach/work-day-scheduler)
 
-* Application user experience is intuitive and easy to navigate
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-* Application user interface style is clean and polished
+## Acknowledgments
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
+* [https://www.w3docs.com/] (W3 Docs)
+* [https://developer.mozilla.org/en-US/] (MDN Web Docs)
+* [https://html.com/] (HTML for Beginners)
+* [https://blog.hubspot.com/website/css-tutorial] (The Ultimate CSS Tutorial for Beginner Programmers)
+* [https://www.w3schools.com/js/] (JavaScript Tutorial)
+* [https://gamedevacademy.org/javascript-quiz-tutorial/] (Create a Basic Quiz using JavaScript)
+* [https://codepen.io/gcarino/pen/AaJBOo] (Dynamic JavaScript Quiz)
+* [https://www.codewithrandom.com/2022/08/04/quiz-app-using-javascript-quiz-app-source-code-codewithrandom/] (Create Quiz App Using HTML, CSS & JavaScript)
+* [https://codingartistweb.com/2022/06/quiz-app-with-javascript/] (Quiz App With Javascript)
 
-### Repository Quality: 13%
 
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
