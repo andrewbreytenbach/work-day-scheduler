@@ -58,6 +58,12 @@ saveButtons.forEach(function(saveButton) {
     // This gets the user input for the current time-block from local storage and assigns it to a variable.
     const userInput = localStorage.getItem(timeBlockId);
 
+     // This says if the constant userInput exists, set the value of the description field in the time-block to the saved input so it displays to the HTML.
+      if (userInput) {
+        timeBlock.querySelector(".description").value = userInput;
+      }
+    });
+
 
   // This gets the current time and date using Day.js
     const currentTime = () => {
