@@ -50,6 +50,11 @@ saveButtons.forEach(function(saveButton) {
   // This gets all the time-blocks on the page and assigns them to a new variable.
   const timeBlocks = document.querySelectorAll(".time-block");
 
+  // Loop through each time-block
+  timeBlocks.forEach(function(timeBlock) {
+    // Get the id of the current time-block
+    const timeBlockId = timeBlock.id;
+
 
   // This gets the current time and date using Day.js
     const currentTime = () => {
