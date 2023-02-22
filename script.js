@@ -1,4 +1,4 @@
-
+// This is the function (run using jQuery) that will allow the whole page to be interactive.
 $(function () {
 
 // Get all the save buttons

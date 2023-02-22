@@ -1,10 +1,10 @@
-/*  */
+/* This specifices the font-family and font-size for the body of the webpage. */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
-/*  */
+/* This sets the styling for the text area where the user will type their agenda into the calendar. */
 textarea {
   background: transparent;
   border: none;
@@ -14,47 +14,47 @@ textarea {
   padding: 10px;
 }
 
-/*  */
+/* This is another class used to style the text area the user will type into. */
 .description {
   white-space: pre-wrap;
 }
 
-/*  */
+/* This rounds the border of the time-block class. */
 .time-block {
   border-radius: 15px;
 }
 
-/*  */
+/* This sets the top border for each row of the webpage. */
 .row {
   border-top: 1px solid white;
 }
 
-/*  */
+/* This styles the hour portion of the row and sets the color of the text. */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
-/*  */
+/* This assigns a gray color to any time-blocks that have already occurred. */
 .past {
   background-color: #d3d3d3;
   color: white;
 }
 
-/*  */
+/* This assigns a red color to the current time-block. */
 .present {
   background-color: #ff6961;
   color: white;
 }
 
-/*  */
+/* This assigns a green color to any of the time-blocks that haven't happened yet */
 .future {
   background-color: #77dd77;
   color: white;
 }
 
-/*  */
+/* This specifices the styling for the save button, inlcuding the color and shape. */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
