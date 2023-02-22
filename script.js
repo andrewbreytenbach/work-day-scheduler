@@ -50,10 +50,13 @@ saveButtons.forEach(function(saveButton) {
   // This gets all the time-blocks on the page and assigns them to a new variable.
   const timeBlocks = document.querySelectorAll(".time-block");
 
-  // Loop through each time-block
+  // This loops through each time-block using a forEach function.
   timeBlocks.forEach(function(timeBlock) {
-    // Get the id of the current time-block
+    // This gets the id of the current time-block and reassigns it to a new variable.
     const timeBlockId = timeBlock.id;
+
+    // This gets the user input for the current time-block from local storage and assigns it to a variable.
+    const userInput = localStorage.getItem(timeBlockId);
 
 
   // This gets the current time and date using Day.js
