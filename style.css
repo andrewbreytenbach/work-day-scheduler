@@ -36,7 +36,7 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
-
+/*  */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -72,4 +72,5 @@ textarea {
 /* This moves all of the items in the header element to be centered in the webpage. */
 header {
   text-align: center;
+  border-bottom: 10px solid black;
 }

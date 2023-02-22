@@ -25,22 +25,14 @@
   </head>
 
   <body>
+    <!-- This header class allows us to add the current time on the HTML page and the style it accordingly -->
     <header class="p-5 mb-4">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container-fluid px-5">
-      <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
-
+      
       <!-- Example of a past time block. The "past" class adds a gray background color. -->
       <div id="hour-9" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
@@ -68,6 +60,7 @@
         </button>
       </div>
 
+      <!--  -->
       <div id="hour-12" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -76,6 +69,7 @@
         </button>
       </div>
 
+      <!--  -->
       <div id="hour-13" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -84,6 +78,7 @@
         </button>
       </div>
 
+      <!--  -->
       <div id="hour-14" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -92,6 +87,7 @@
         </button>
       </div>
 
+      <!--  -->
       <div id="hour-15" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -100,6 +96,7 @@
         </button>
       </div>
 
+      <!--  -->
       <div id="hour-16" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -108,6 +105,7 @@
         </button>
       </div>
 
+      <!--  -->
       <div id="hour-17" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -118,6 +116,7 @@
 
     </div>
 
+    <!-- These are the script files for jquery, dayjs, and also the script.js file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
