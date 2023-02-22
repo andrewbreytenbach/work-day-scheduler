@@ -9,14 +9,18 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
+// Get all the save buttons
+const saveButtons = document.querySelectorAll(".saveBtn");
+
+
   // This will use 24 hour time to do comparisons with the id inside of the row class.
   
     // Get the current hour using Day.js
     const currentHour = dayjs().hour();
 
     // Loop through each time-block element suing a for loop (forEach) function
-    const timeBlocks = document.querySelectorAll(".time-block");
-    timeBlocks.forEach(timeBlock => {
+    const timeBlock = document.querySelectorAll(".time-block");
+    timeBlock.forEach(timeBlock => {
 
       // Get the id attribute of each time-block element and store it as a new constant
       const timeBlockId = timeBlock.getAttribute("id");
@@ -41,7 +45,7 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  
+
 
   // Get the current time and date using Day.js
     const currentTime = () => {
