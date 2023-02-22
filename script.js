@@ -15,9 +15,10 @@ const saveButtons = document.querySelectorAll(".saveBtn");
 // This adds an event listener for each save button
 saveButtons.forEach(function(saveButton) {
   saveButton.addEventListener("click", function() {
-  // This gets the user input for the current time-block
+    // This gets the user input for the current time-block
     const userInput = this.parentNode.querySelector(".description").value;
-
+    // This gets the id of the current time-block but using the parent-child relationship
+    const timeBlockId = this.parentNode.id;
 
   // This will use 24 hour time to do comparisons with the id inside of the row class.
   
