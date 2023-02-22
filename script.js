@@ -14,6 +14,12 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+  
+  // This will use 24 hour time to do comparisons with the id inside of the row class.
+  const rows = document.getElementsByClassName("row");
+  let currentHour = parseInt(moment().format("H"));
+
+  
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
