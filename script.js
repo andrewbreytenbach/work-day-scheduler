@@ -12,6 +12,11 @@ $(function () {
 // Get all the save buttons
 const saveButtons = document.querySelectorAll(".saveBtn");
 
+// This adds an event listener for each save button
+saveButtons.forEach(function(saveButton) {
+  saveButton.addEventListener("click", function() {
+  })
+
 
   // This will use 24 hour time to do comparisons with the id inside of the row class.
   
