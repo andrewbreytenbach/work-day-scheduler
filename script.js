@@ -14,7 +14,7 @@ $(function () {
     // Get the current hour using Day.js
     const currentHour = dayjs().hour();
 
-    // Loop through each time-block element
+    // Loop through each time-block element suing a for loop (forEach) function
     const timeBlocks = document.querySelectorAll(".time-block");
     timeBlocks.forEach(timeBlock => {
 
