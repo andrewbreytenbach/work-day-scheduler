@@ -54,9 +54,5 @@ Project Link: [https://github.com/andrewbreytenbach/work-day-scheduler](https://
 * [https://html.com/] (HTML for Beginners)
 * [https://blog.hubspot.com/website/css-tutorial] (The Ultimate CSS Tutorial for Beginner Programmers)
 * [https://www.w3schools.com/js/] (JavaScript Tutorial)
-* [https://gamedevacademy.org/javascript-quiz-tutorial/] (Create a Basic Quiz using JavaScript)
-* [https://codepen.io/gcarino/pen/AaJBOo] (Dynamic JavaScript Quiz)
-* [https://www.codewithrandom.com/2022/08/04/quiz-app-using-javascript-quiz-app-source-code-codewithrandom/] (Create Quiz App Using HTML, CSS & JavaScript)
-* [https://codingartistweb.com/2022/06/quiz-app-with-javascript/] (Quiz App With Javascript)
 
 
